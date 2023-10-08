@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/gojoizgod/TERROR/main/KILL.csv"
+  },
+  "vconcat": [
+    {
+      "mark": {"type": "area", "color": "#0B666A"},
+      "encoding": {
+        "x": {"field": "iyear", "type": "temporal", "title": "Year", "scale": {"domain": {"param": "brush"}}, "axis": {"title": "Year", "tickCount": 10}},
+        "y": {"aggregate": "sum", "field": "nkill", "type": "quantitative", "title": "Cumulative Kills"}
+      },
+      "width": 650,
+      "height": 340
+    },
+    {
+      "width": 650,
+      "height": 80,
+      "mark": {"type": "area", "color": "#FE6244"},
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {"field": "iyear", "type": "temporal", "axis": {"title": "Year", "tickCount": 10}},
+        "y": {
+          "aggregate": "sum",
+          "field": "nkill",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false},
+          "title": "Cumulative Kills"
+        }
+      }
+    }
+  ]
+}
