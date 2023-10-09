@@ -1,0 +1,14 @@
+attacktype1_txt,count1,targtype1_txt,count2,weaptype1_txt,count3
+Armed Assault,996,Airports & Aircraft,233,Chemical,20
+Assassination,1491,Business,1889,Explosives,3414
+Bombing/Explosion,3283,Educational Institution,203,Firearms,2167
+Facility/Infrastructure Attack,899,Government,1384,Incendiary,1094
+Hijacking,54,Journalists & Media,198,Melee,66
+Hostage Taking (Barricade Incident),100,Military,847,,
+Hostage Taking (Kidnapping),359,Police,729,,
+,,Private Citizens & Property,1155,,
+,,Religious Figures/Institutions,70,,
+,,Terrorists/Non-State Militia,122,,
+,,Tourists,25,,
+,,Transportation,146,,
+,,Utilities,142,,
